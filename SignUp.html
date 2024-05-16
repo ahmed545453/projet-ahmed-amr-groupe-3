@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title> Registration</title>
+       
+    <link rel="stylesheet" href="styleSignUp.css">
+
+</head>
+  <body>
+    <section>
+        <div class="signUp-container" id="signup">
+            <h2 style="color: blueviolet; text-align: center;">Registration</h2>
+            <div class="SignUp-name">
+                <input type="text" placeholder="  name" required id="name">
+                <i class="uil uil-user"></i>
+            </div>
+            <span class="error " id="name-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">Please fill the field correctly.</p>
+            </span>
+
+            <div class="SignUp-email">
+                <input type="email" placeholder=" email" required id="email">
+                <i class="uil uil-envelope-alt"></i>
+            </div>
+            <span class="error" id="email-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">Please enter a valid email</p>
+            </span>
+            <div class="SignUp-password">
+                <input type="password" placeholder=" password" required id="password">
+                <i class="uil uil-lock password"></i>
+            </div>
+            <span class="error " id="password-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">
+                 Please enter atleast 8 charatcer with number, symbol, small and
+                capital letter.
+                </p>
+            </span>
+            
+            <div class="SingUp-Confirm-password">
+                <input type="password" placeholder="confirmation de password" required  id="confirm-password"/>
+                <i class="uil uil-lock password" ></i>
+            </div>
+            <span class="error " id="Confirm-password-error">
+                <i class="uil uil-exclamation-octagon"></i>
+                <p class="error-text">
+                    Password don't match.
+                </p>
+            </span>
+                                                                                                                                                                                        
+            
+            <div class="button" >
+                <button style="color: rgb(166, 0, 255);"  onclick="return Validtion()" >Enregistrer</button>
+            </div>
+
+        </div>
+    </section>
+    </form>
+    </section>
+    <script src="SigneUpScript.js"></script>
+  </body>
+    
+
+    

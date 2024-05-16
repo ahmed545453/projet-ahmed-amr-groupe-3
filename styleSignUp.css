@@ -1,0 +1,116 @@
+
+
+body{
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#6d2ec4;
+}
+.signUp-container{
+    position: relative;
+    width: 500px;
+    margin-top: 15%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 10% 15% 15% 15%;
+}
+
+.signUp-container input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    transition: all 0.8s;
+}
+
+
+.signUp-container div{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.signUp-container input:is(:focus){
+    border-bottom:solid 2px #6d2ec4;
+}
+ .signUp-container  h1{
+    font-size: 200%;
+    text-decoration: solid black 2px;
+    text-decoration: underline #6d2ec4;
+
+ }
+ .signUp-container i{
+
+    position: absolute;
+    top: 10%;
+    color: #999;
+    font-size: 23px;
+    transition: all 0.8s ease;
+ }
+ .signUp-container h1{
+    font-size: 250%;
+ }
+.signUp-container input:focus ~ i{
+    color: #6d2ec4;
+}
+
+.checkbox-content label {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+#termCon{
+    position: absolute;
+    accent-color: #6d2ec4;
+    left:0;
+    width: 20px;
+    top: 0;
+}
+.button button{
+    background-color:#6d2ec4 ;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 120%;
+}
+
+.signUp-container input:focus:valid{
+    border-bottom-color:rgb(56, 59, 255) ;
+    transition: all 0.5s;
+}
+.signUp-container input:focus:valid~i{
+    color: rgb(56, 59, 255);
+    transition: all 0.5s;
+
+}
+
+span{
+    display: block;
+    position: relative;
+    width: 100%;
+    color: #d62828;
+    display: none;
+}
+span i{
+    position: absolute;
+    top: 0;
+    color: #d62828 !important;
+}
+
+span p{
+    margin-left: 8%;
+    margin-top: 0px;
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+ #login{
+    display:none;
+} 
